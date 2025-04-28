@@ -15,8 +15,8 @@ importers:
         specifier: ^6.0.6
         version: 6.0.6
       meriyah-walker:
-        specifier: link:vendor/meriyah-walker
-        version: link:vendor/meriyah-walker
+        specifier: ^3.0.0
+        version: 3.0.0(meriyah@6.0.6)
     devDependencies:
       '@alloc/prettier-config':
         specifier: latest
@@ -546,6 +546,11 @@ packages:
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
+
+  meriyah-walker@3.0.0:
+    resolution: {integrity: sha512-ZtHmz1ENTzatLcelpG7x/FB9X7xbLvSIE4Y9KxigclFJplivl0BMSbhWNjNyIjdDRTWKO7cvw4XzBQEcAikZHw==}
+    peerDependencies:
+      meriyah: '*'
 
   meriyah@6.0.6:
     resolution: {integrity: sha512-jXJ2Hn1sLcge9QypNdZwbl/GqF5Qdc46TJA20g9KFa4ZnxQx74bDlJ3RfdaFhUIU3yN0lAcP99EH/XPPAcYcHA==}
@@ -1281,6 +1286,11 @@ snapshots:
   magic-string@0.30.17:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  meriyah-walker@3.0.0(meriyah@6.0.6):
+    dependencies:
+      estree-walker: 3.0.3
+      meriyah: 6.0.6
 
   meriyah@6.0.6: {}
 
