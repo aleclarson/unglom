@@ -1,7 +1,7 @@
 {
   "name": "unglom",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "exports": {
     "types": "./dist/unglom.d.ts",
     "default": "./dist/unglom.js"
