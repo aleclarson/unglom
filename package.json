@@ -1,0 +1,44 @@
+{
+  "name": "unglom",
+  "type": "module",
+  "version": "0.0.0",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "author": "Alec Larson",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleclarson/unglom.git"
+  },
+  "prettier": "@alloc/prettier-config",
+  "scripts": {
+    "dev": "rimraf dist && tsup --sourcemap --watch",
+    "build": "rimraf dist && tsup",
+    "format": "prettier --write .",
+    "lint": "tsc-lint",
+    "test": "vitest",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "@alloc/prettier-config": "latest",
+    "@types/node": "latest",
+    "picospawn": "^0.3.1",
+    "prettier": "latest",
+    "radashi": "latest",
+    "rimraf": "latest",
+    "tsc-lint": "latest",
+    "tsup": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  },
+  "dependencies": {
+    "magic-string": "^0.30.17",
+    "meriyah": "^6.0.6",
+    "meriyah-walker": "link:vendor/meriyah-walker"
+  }
+}
