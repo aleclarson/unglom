@@ -39,9 +39,11 @@ But with `unglom`, any references to `blah_exports.xyz` are replaced with the re
 
 ```js
 function saveTheWorld() {
-  return blah()
+  return blah2()
 }
 ```
+
+**Note:** Since `esbuild` often renames functions and variables to avoid naming collisions in the bundle, `unglom` takes special care to rewrite references to the correct esbuild-renamed variables (`blah2` in this case).
 
 What's great about this is you can keep using your namespace exports, but now they'll be tree-shakeable!
 
