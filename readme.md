@@ -61,4 +61,10 @@ Using `unglom` is straight-forward. Pass in JavaScript code, receive back the tr
 import unglom from 'unglom'
 
 const result = unglom(jsCode, { sourceMap: true })
+// => {
+//   code: "<your transformed code>",
+//   map: { version: 3, … },
+// }
 ```
+
+If the given code doesn't use any namespace exports, `unglom` will return `null`.
