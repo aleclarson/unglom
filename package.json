@@ -3,8 +3,8 @@
   "type": "module",
   "version": "1.0.0",
   "exports": {
-    "types": "./dist/index.d.ts",
-    "default": "./dist/index.js"
+    "types": "./dist/unglom.d.ts",
+    "default": "./dist/unglom.js"
   },
   "files": [
     "dist"
